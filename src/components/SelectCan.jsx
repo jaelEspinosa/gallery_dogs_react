@@ -25,7 +25,7 @@ let listaRazas = Object.keys(razas)
 
     <div className='cont'>
     <div>
-    <lavel><h1>Selecciona la raza </h1></lavel>
+    <h2 className='title'>Busca perro por raza </h2>
         <select
         className='select'
         value={busqueda}

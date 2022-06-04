@@ -2,6 +2,9 @@
 *{
     font-family: 'Lato', s;
 }
+.title{
+    margin: 2px;
+}
 
 .contenedor{
     padding: 20px 0;
@@ -29,7 +32,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    row-gap: 5px;
+    row-gap: 4px;
     margin: auto;
     max-width: 1200px; 
        
