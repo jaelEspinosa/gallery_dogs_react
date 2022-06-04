@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <SelectCan/>
+            <SelectCan/>
     </div>
   )
 }

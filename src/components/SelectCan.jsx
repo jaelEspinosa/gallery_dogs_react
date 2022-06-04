@@ -24,15 +24,15 @@ let listaRazas = Object.keys(razas)
   return (
 
     <div className='cont'>
-    <div>
-    <h2 className='title'>Busca perro por raza </h2>
+    <div className='select-cont'>
+    <h2 className='title'>Galeria de fotos</h2>
         <select
         className='select'
         value={busqueda}
         onChange={e => setBusqueda(e.target.value)}
 
         >
-           <option value = ''>seleccione</option>
+           <option value = ''>Busca por raza de perro</option>
            {listaRazas.map((raza,index)  => (
             <option key={index} value = {raza}
             

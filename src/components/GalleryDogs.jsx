@@ -18,7 +18,7 @@ const [imagenPerros, setImagenPerros] = useState([])
    
   return (
       <>
-        <h2 className='title'>fotos de {busqueda}</h2>
+        {busqueda !== '' ? <h2 className='title'>fotos de {busqueda}</h2>: null}
         <div className='contenedor'>
            {imagenPerros.map((perro, index)=>(
                <div key = {index} className='cart'>
