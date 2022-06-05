@@ -1,13 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
+import { DetailContext } from '../context/DetailContext'
 import GalleryDogs from './GalleryDogs'
 
 
 
 const SelectCan = () => {
-    const[busqueda, setBusqueda]=useState('')
-    const [razas, setRazas]=useState([])
+    const{busqueda, setBusqueda}=useContext(DetailContext)
+    const {razas, setRazas}=useContext(DetailContext)
     useEffect(()=>{
-const obtenerRazas = async ()=>{
+    const obtenerRazas = async ()=>{
 
     console.log('componente listo, pidiendo...')
     const url='https://dog.ceo/api/breeds/list/all'

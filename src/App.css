@@ -9,6 +9,49 @@ body{
 .title{
     margin: 2px;
 }
+.contenedor-detail{
+    margin: auto;
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width: 300px;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 8px;
+    background-color: chocolate;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.button:hover{
+    background-color: rgb(73, 36, 10);
+    transition-property: background-color box-sahdow;
+    transition-duration: 0.5s;
+    box-shadow: 5px 5px 8px beige;
+    
+}
+
+.contenedor-detail img{
+    width: 85vw;
+}
+
+@media(min-width:768px){
+    .contenedor-detail{
+        width: 100vw;
+        height: 100vh;
+       
+    }
+    .contenedor-detail img{
+        max-width: 450px;
+    }
+}
+
 
 .contenedor{
     background-color: gray;
