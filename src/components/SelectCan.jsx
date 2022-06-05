@@ -10,7 +10,7 @@ const SelectCan = () => {
     useEffect(()=>{
     const obtenerRazas = async ()=>{
 
-    console.log('componente listo, pidiendo...')
+    
     const url='https://dog.ceo/api/breeds/list/all'
     const respuesta = await fetch(url)
     const resultado = await respuesta.json()
