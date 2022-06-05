@@ -15,7 +15,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5rem;
     justify-content: center;
     align-items: center;
 }
@@ -38,7 +38,12 @@ body{
 }
 
 .contenedor-detail img{
-    width: 85vw;
+    width: 80vw;
+    
+    max-height: 400px;
+    border: 5px solid chocolate;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px beige;
 }
 
 @media(min-width:768px){
@@ -49,6 +54,7 @@ body{
     }
     .contenedor-detail img{
         max-width: 450px;
+        max-height: 680px;
     }
 }
 
